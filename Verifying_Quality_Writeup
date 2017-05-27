@@ -1,0 +1,5 @@
+Verifying Data Quality
+
+There are no missing values in the dataset. This dataset is not a raw dataset and has already been cleaned prior to it’s upload on the UCI Machine Learning Repository. Therefore, there are no missing values. There are 39,644 records of data over 61 attributes. All of the attributes are non-null floats, except for the attributes ‘url' and ‘shares'. ‘Url' is a non-null object data type and ‘shares’ is a non-null integer data type.
+
+There are some recordist the attribute ‘share’ that are outliers. This due to some posts going viral and gaining a lot of shares. We are not going to consider them mistakes.
