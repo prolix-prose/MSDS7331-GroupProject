@@ -1,0 +1,19 @@
+# Phillip SVM
+
+The accuracy of the support vectors for iteration zero is .6394. This means that 64% of the vectors are correctly classified out of a total of 1470. According to the confusion matrix, there were 162 predicted no that were actually no. There were 420 that were predicted yes, but were actually no. There were 110 that were predicted no, but were actually yes, and there were 778 that were predicted yes and were actually yes. Therefore, there were 940 predicted correctly and 530 predicted incorrectly.
+
+The accuracy of the support vectors for iteration one is .6326. This means that 63% of the vectors are correctly classified out of a total of 1470. According to the confusion matrix, there were 174 predicted no that were actually no. There were 412 that were predicted yes, but were actually no. There were 128 that were predicted no, but were actually yes, and there were 756 that were predicted yes and were actually yes. Therefore, there were 930 predicted correctly and 540 predicted incorrectly.
+
+The accuracy of the support vectors for iteration 2 is .6149. This means that 61% of the vectors are correctly classified out of a total of 1470. According to the confusion matrix, there were 163 predicted no that were actually no. There were 436 that were predicted yes, but were actually no. There were 130 that were predicted no, but were actually yes, and there were 741 that were predicted yes and were actually yes. Therefore, there were 904 predicted correctly and 566 predicted incorrectly.
+
+The dimensions of the arrays of the support vectors are (4637, 52).
+The dimensions of the indices of the support vectors are (4637, )
+The number of support vectors for each class is [2309, 2328]. That is since 0 was classified as not popular and 1 was classified as popular, there are 2309 instances classified as not popular and 2328 instances classified as popular.
+
+Next we have the weights of each support vector. Plotting them, we can see which weights are the strongest and the weakest. Classifying coefficients. Kw_avg_avg had the highest coefficient, which means that it has the strongest weight. Other significant coefficients are kw_max_avg, n_unique_tokens, n_non_stop_unique_tokens_, global_rate_positive_words, and global_rate_negative_words. Some of the support vectors that have the smallest coefficients are kw_avg_min, self_reference_max_shares, LDA_02, and title_subjectivity.
+
+When looking at the density graphs we can see which attributes support vectors are more or less popular than the original. For example we can see in n_tokens_content that the instances chosen as support vectors for popular instances were about the same as the original data. However, there were less non popular instances. 
+
+In terms of coefficients with larger weights, the instances chosen as support vectors for n_unique_tokens was less dense than the original data, but roughly the same distribution. This is also the same for n_non_stop_unique_tokens. For kw_avg_avg, this is also true but also there are more popular instances chosen in the support vector than non popular. The opposite is true in the original data. This is also the case for kw_max_avg.
+
+We did not have to use stochastic gradient descent on our data and therefore did not have to take any subsamples of the data.
