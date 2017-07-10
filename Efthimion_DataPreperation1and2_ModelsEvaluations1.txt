@@ -45,3 +45,12 @@ The Recall, also known as True Positive Rate, tells us that when an instance is 
 The F-measure is a weighted average of the precision and recall. The F measure is calculated by the product of the precision and recall divided by the sum of the precision and recall. The F measure is scored between 0 and 1 with 1 being the best value and 0 being the lowest. 
 
 All of these measurements are appropriate for measuring our data. The accuracy lets us know a proportion of how well our model is performing to correctly predict the categories that our data belongs in. The precision and recall are both also appropriate measurements. To tell us what percentage of Mashable articles that we predict will be popular and are actually popular, precision is required. To tell us that when an article is actual popular, what percentage of time was this predicted? The F measure is a great tool for measuring the performance of models using the precision and recall, which we are already calculating both. Therefore, these are all appropriate models.
+
+##############################
+##############################
+##############################
+
+# Modeling and Evaluation 2
+
+By using 10 folds cross-validation, the dataset is split randomly into 10 equal parts. Of these 10 parts, 9 of them will be used for training. The final part will be used for testing the data after it is trained. This means that 90% of the data will be used for training and 10% will be used for testing. Since we are using cross-validation, this process will occur 10 times since for our k-folds cross validation k=10. This allows all observations to be used for both training and testing in separate instances. Since in this case we are stratifying, the folds will also take into account the proportions of our classification labels.
+
